@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,27 +11,42 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/maugallery.js"></script>
+    <script src="./assets/scripts.js"></script>
   </head>
   <body>
-    <header class="top-header">
-      <h1 class="name">Nina Carducci</h1>
-      <nav class="nav">
-        <ul class="section-padding">
+    <div class="top-header">
+      <h3 class="name">Nina Carducci</h3>
+      <div class="nav">
+        <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#gallery">Galerie</a></li>
           <li><a href="#services">Service</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><i class="fa-brands fa-instagram"></i></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+              ><img src="assets/images/instagram.webp" alt=""
+            /></a>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <section id="header">
+      </div>
+    </div>
+    <div id="header">
       <div
         id="carouselExampleIndicators"
-        class="carouselSlide"
+        class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carouselIndicators">
+        <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleIndicators"
@@ -57,30 +71,26 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+              src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
-              alt="Homme qui marche"
+              alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+              src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
-              alt="Personnes dans un public"
+              alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+              src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
-              alt="mariés qui s'embrassent"
+              alt="..."
             />
           </div>
         </div>
-      </div>
-    </section>
-    <div>
-      <div>
         <button
           class="carousel-control-prev"
           type="button"
@@ -106,12 +116,12 @@
         <img src="./assets/images/nina.webp" />
       </div>
       <div id="about-me">
-        <h2 class="about-me__title">A propos de moi</h2>
-        <h3 class="about-me__introduction">
+        <h3 class="about-me__title">A propos de moi</h3>
+        <h6 class="about-me__introduction">
           Devenir photographe était pour moi une évidence. Comme si j’y étais
           prédestiné. Saisir un moment, une émotion, une situation, un endroit,
           une lumière et les rendre immortels, voilà ce qui me fait vibrer.
-        </h3>
+        </h6>
         <p>
           Nous passons notre vie à chercher le bonheur, et lorsque nous y
           touchons, nous n’avons qu’une envie : le figer au travers de
@@ -132,67 +142,58 @@
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-            alt="Concert d'Aaron Paul"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-            alt="Portrait d'un homme d'entreprise"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-            alt="Portrait d'une femme d'entreprise"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-            alt="Mains reliées pour un mariage"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-            alt="Portrait d'un homme au soleil"
           />
           <img
             data-gallery-tag="Mariages"
             class="gallery-item"
             src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-            alt="Portrait d'un couple pour leur mariage"
           />
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
             src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-            alt="Portrait d'une femme a travers un grillage"
           />
           <img
             data-gallery-tag="Concert"
             class="gallery-item"
             src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-            alt="Concert de Austin Neill"
           />
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
             src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-            alt="femme riant en entreprise"
           />
         </div>
       </div>
       <div class="quote">
         <figure>
           <blockquote>
-            <h3 class="quote__text">
+            <h1 class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h3>
+            </h1>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
@@ -283,12 +284,4 @@
       </div>
     </div>
   </body>
-  <!--<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>-->
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-  <script src="assets/maugallery.js"></script>
-  <script src="./assets/scripts.js"></script>
 </html>
