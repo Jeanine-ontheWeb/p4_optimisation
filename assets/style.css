@@ -354,3 +354,8 @@ input[type="submit"] {
     width: 80%;
   }
 }
+ul.infosFooter{
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
