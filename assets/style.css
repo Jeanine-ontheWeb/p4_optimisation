@@ -90,7 +90,7 @@ body {
 }
 
 #gallery {
-min-height: 100vh;
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -240,6 +240,11 @@ input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
+.infosFooter {
+  all: unset;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 @media all and (max-width: 1180px) {
   .picture {
@@ -253,7 +258,7 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+  #about-me h4,
   #about-me p {
     width: 100%;
   }
@@ -354,8 +359,9 @@ input[type="submit"] {
     width: 80%;
   }
 }
-ul.infosFooter{
-    all: unset;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;}
+ul.infosFooter {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

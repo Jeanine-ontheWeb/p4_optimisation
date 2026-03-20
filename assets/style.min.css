@@ -38,7 +38,8 @@
 .nav ul,
 .service,
 .top-header,
-form {
+form,
+ul.infosFooter {
   display: flex;
 }
 body {
@@ -113,6 +114,9 @@ body {
 #about-me p {
   width: 80%;
   font-size: 14px;
+}
+#gallery {
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -225,6 +229,12 @@ input[type="submit"] {
   background-color: #beb45a;
   padding: 0.5em 1em;
 }
+.infosFooter {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
@@ -237,7 +247,7 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+  #about-me h4,
   #about-me p {
     width: 100%;
   }
@@ -329,7 +339,7 @@ input[type="submit"] {
     width: 80%;
   }
 }
-ul.infosFooter {
+.infosFooter {
   all: unset;
   display: flex;
   flex-direction: row;
