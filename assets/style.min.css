@@ -119,9 +119,9 @@ body {
   background-color: #beb45a;
   border-radius: 0;
 }
-span.nav-link.active.active-tag {
-  color: #000;
-  background-color: #beb45a;
+span .nav-link.active.active-tag {
+  color: #000 !important;
+  background-color: #beb45a !important;
   border-radius: 0;
 }
 .nav-pills .nav-link {

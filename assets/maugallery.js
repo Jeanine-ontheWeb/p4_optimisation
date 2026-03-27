@@ -140,9 +140,8 @@ function mauGallery($) {
           index = i;
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+      next = imagesCollection[(index - 1) % imagesCollection.length];
+      
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
@@ -203,7 +202,7 @@ function mauGallery($) {
     showItemTags(gallery, position, tags) {
       var tagItems =
         '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
-      $.each(tags, function (index, value) {
+      $.each(tags, function (_index, value) {
         tagItems += `<li class="nav-item active">
                 <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
       });
