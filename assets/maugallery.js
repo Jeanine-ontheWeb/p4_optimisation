@@ -167,14 +167,14 @@ function mauGallery($) {
           }
         });
       }
-      let index = 0,
-        next = null;
+      let index = 0;
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
           index = i;
         }
       });
-      next = imagesCollection[index] || imagesCollection[0];
+      let nextIndex = (index + 1) % imagesCollection.length;
+      let next = imagesCollection[nextIndex];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     createLightBox(gallery, lightboxId, navigation) {

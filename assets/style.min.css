@@ -12,7 +12,6 @@
 .service,
 .top-header {
   background-color: #fff;
-  display: flex;
 }
 #about,
 #contact {
@@ -27,17 +26,6 @@
   bottom: 0;
   z-index: -1;
 }
-#about,
-#contact .container,
-.mg-next,
-.mg-prev,
-.nav ul,
-.service,
-.top-header,
-form,
-ul.infosFooter {
-  display: flex;
-}
 body {
   max-width: 1920px;
   margin: auto;
@@ -50,6 +38,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
   justify-content: space-between;
   padding-inline: 100px;
   padding-block: 30px;
@@ -65,6 +54,7 @@ body {
   font-size: 26px;
 }
 .nav ul {
+  display: flex;
   list-style-type: none;
   font-size: 14px;
   margin-bottom: 0;
@@ -80,6 +70,7 @@ body {
   width: 20px;
 }
 #about {
+  display: flex;
   background-color: #f6d2b8;
 }
 .picture.left::before {
@@ -123,18 +114,18 @@ body {
   justify-content: center;
 }
 .active-tag .active,
-.nav-pills .nav-link .active .nav-pills .show > .nav-link {
-  color: black;
+.nav-pills .nav-link .active .nav-pills .nav-link {
+  color: #fff;
+  background-color: #beb45a;
   border-radius: 0;
 }
-span.nav-link.active-tag{
-  color: #000 !important;
-  background-color: #beb45a !important;
+span.nav-link.active.active-tag {
+  color: #000;
+  background-color: #beb45a;
   border-radius: 0;
 }
 .nav-pills .nav-link {
   color: #000;
-  
 }
 .item-column {
   margin-bottom: 0 !important;
@@ -159,6 +150,7 @@ span.nav-link.active-tag{
   border-radius: 00%;
   justify-content: center;
   align-items: center;
+  display: flex;
   font-size: 24px;
 }
 form input,
@@ -204,6 +196,7 @@ form textarea {
   width: 30%;
   height: 337px;
   padding: 1em;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
@@ -212,12 +205,16 @@ form textarea {
   margin: auto;
   background-color: #d8d3a8;
 }
+#contact .container {
+  display: flex;
+}
 .picture.right::before {
   background-color: #beb45a;
   position: absolute;
   right: 0;
 }
 form {
+  display: flex;
   flex-direction: column;
   width: 70%;
   align-items: flex-start;
@@ -236,6 +233,13 @@ input[type="submit"] {
 }
 .infosFooter {
   all: unset;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ul .infosFooter,
+ul.infosFooter {
+  all: unset;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -342,9 +346,4 @@ input[type="submit"] {
   .picture {
     width: 80%;
   }
-}
-ul.infosFooter {
-  all: unset;
-  flex-direction: row;
-  justify-content: space-around;
 }

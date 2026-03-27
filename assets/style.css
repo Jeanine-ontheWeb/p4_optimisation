@@ -253,8 +253,14 @@ input[type="submit"] {
 .active-tag .active {
   color: #fff;
   background-color: #beb45a;
-  border-radius: 0;
-}
+  border-radius: 0;}
+
+  .ul .infosFooter {
+    all: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
