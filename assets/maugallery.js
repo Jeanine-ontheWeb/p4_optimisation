@@ -141,7 +141,7 @@ function mauGallery($) {
         }
       });
       next = imagesCollection[(index - 1) % imagesCollection.length];
-      
+
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
     nextImage() {
