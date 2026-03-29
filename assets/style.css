@@ -99,6 +99,13 @@ body {
 .gallery .nav {
   justify-content: center;
 }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black;
+  background-color: transparent;
+}
+
 .nav-pills .nav-link .active .nav-pills .nav-link {
   color: #fff;
   background-color: #beb45a;
@@ -251,16 +258,24 @@ input[type="submit"] {
 }
 
 .active-tag .active {
-  color: #fff;
+  color: black !important;
+  background-color: #beb45a !important;
+  border-radius: 0;
+}
+li .nav-item {
+  background-color: transparent;
+  color: black;
+}
+span.nav-link.active-tag {
   background-color: #beb45a;
-  border-radius: 0;}
-
-  .ul .infosFooter {
-    all: unset;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  border-radius: 0;
+}
+.ul .infosFooter {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;
